@@ -1,0 +1,114 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%> 
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+   <link rel="stylesheet" rev="stylesheet" href="<%=path %>/css/style.css" type="text/css" media="all" />
+<style type="text/css">
+<!--
+.atten {font-size:12px;font-weight:normal;color:#F00;}
+-->
+</style>
+</head> 
+<body class="ContentBody">
+  <form action="<%=path %>/servlet/UsersServlet?method=update" method="post"  name="fom" id="fom" >
+<div class="MainDiv">
+<table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+  <tr>
+      <th class="tablestyle_title" >修改页面</th>
+  </tr>
+  <tr>
+    <td class="CPanel">
+		
+		<table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+		
+		<TR>
+			<TD width="100%">
+				<fieldset style="height:100%;">
+				<legend>修改用户</legend>
+					  <table border="0" cellpadding="2" cellspacing="1" style="width:100%">
+					 <tr>
+					    <td nowrap align="right" width="13%">用户名:</td>
+					    <td width="41%">  
+					    <input name="username" readonly="readonly" class="text" value="wang" style="width:250px" type="text" size="40" />
+				        <span class="red"> *</span></td>
+					    <td align="right" width="19%">年龄</td>
+					    <td width="27%">
+					   <select  id="age"  name="age" >
+	                          <%for(int i =1;i<120;i++){ %>
+	                          <option  value="<%=i %>"><%=i %>岁</option>
+	                          <%} %>
+	                        </select>
+					    </td>
+					    </tr>
+					  <tr>
+					    <td nowrap align="right" width="13%">姓名:</td>
+					    <td width="41%">
+					   
+					    <input name="name"  value="老王" class="text" style="width:250px" type="text" size="40" />
+				        <span class="red"> *</span></td>
+					    <td align="right" width="19%">性别:</td>
+					    <td width="27%">
+					    	<select id="sex" name="sex" >
+	                          <option value="男">男</option>
+	                          <option value="女">女</option>
+	                        </select>
+					    </td>
+					    </tr>
+					 
+					 
+					     <tr>
+					    <td nowrap align="right" width="13%">电话:</td>
+					    <td width="41%">
+					   
+					    <input name="phone" class="text"  value="13412421321" style="width:250px" type="text" size="40" />
+				        <span class="red"> *</span></td>
+					    <td align="right" width="19%">地址:</td>
+					    <td width="27%">
+					     <input name="address" class="text"  value="xxxx街xx101" style="width:250px" type="text" size="40" />
+					    </td>
+					    </tr>
+					  
+					 
+					 
+					  </table>
+			 <br />
+				</fieldset>			</TD>
+		</TR>
+		
+		</TABLE>
+	
+	
+	 </td>
+  </tr>
+  
+
+		
+		
+		
+		
+		<TR>
+			<TD colspan="2" align="center" height="50px">
+			<input type="submit" name="Submit" value="保存" class="button" />　
+			
+			<input type="button" name="Submit2" value="返回" class="button" onclick="window.history.go(-1);"/></TD>
+		</TR>
+		</TABLE>
+	
+	
+	 </td>
+  </tr>
+  
+  
+  
+  
+  </table>
+
+</div>
+</form>
+</body>
+</html>
