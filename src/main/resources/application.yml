@@ -4,16 +4,16 @@ server:
 #数据源
 spring:
   datasource:
-  type: com.alibaba.druid.pool.DruidDataSource
-  url: jdbc:mysql://121.199.202.220:3306/meishizaixian
-  username: user7
-  password: User123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://121.199.202.220:3306/meishizaixian
+    username: user7
+    password: User123456
     #模板
   thymeleaf:
     #\开启缓存:true 开发阶段建议关闭
     cache: false
     servlet:
-      content-type: text/html
+     content-type: text/html
     encoding: UTF-8
     mode: HTML5
     prefix: classpath:/templates/
@@ -30,7 +30,7 @@ redis:
 
 #别名定义
 mybatis:
-type-aliases-package: com.gaoshu.model
+    type-aliases-package: com.gaoshu.model
   #加载全局配置文件
     config-location: classpath:SqlMapConfig.xml
     #加载映射配置文件
