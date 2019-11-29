@@ -66,7 +66,7 @@ jQuery.fn.extend({
 					}
 				} else {
 					$("#" + opts.Img).attr('src', _self.getObjectURL(this.files[0]))
-					$("#" + opts.Img).parents(".imgsr").css("background-image","none");
+					$("#" + opts.Img).parents(".imgsr").css("backJsp-image","none");
 					$("#" + opts.Img).parents(".upfile-aside").siblings(".upfile-section").find(".imgshow").children("img").attr('src', _self.getObjectURL(this.files[0]));
 				}
 				opts.Callback()

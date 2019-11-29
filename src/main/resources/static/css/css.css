@@ -419,7 +419,7 @@ margin: 3px; background: url(../images/sprite_s.png) no-repeat 0 0px;}
 
 /*Detail*/
 .detail-banner,.detail-banner .item{ height:564px; width:100%; overflow:hidden;}
-.detail-banner .item{ background-position:center; background-repeat:no-repeat;/* background-size:cover;*/}
+.detail-banner .item{ background-position:center; background-repeat:no-repeat;/* backJsp-size:cover;*/}
 .detail-banner .wrap{ position:relative; z-index:100; height:100%;}
 .detail-banner .wrap .tbg,.detail-banner .wrap .txt{ display:block; width:290px; padding:0 30px; height:550px; bottom:0; right:0; position:absolute; z-index:105; font-size:14px; line-height:28px; color:#FFF;}
 .detail-banner .wrap .tbg,.dd-btn .tbg{ z-index:100; background:rgba(255,255,255,0.15); background:#FFF; opacity:.15; filter:alpha(opacity=15); -moz-opacity:0.15; }
